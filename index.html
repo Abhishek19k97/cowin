@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--  fontawesome  -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Vaccine Availability</title>
+  </head>
+  <body>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-secondary ">
+
+            <a href="#" class="navbar-brand"><i class="fas fa-child text-primary fa-2x"></i></a>
+            <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="nav">
+                <ul class="navbar-nav">
+                    <li class = "nav-item"><a class= "nav-link text-light text-uppercase font-weight-bold px-3" href="#">Co-win</a></li>
+                </ul>
+
+                <form class="form-inline ml-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-append">
+                            <button type="button" class="btn"><i class="fas fa-search text-muted"></i></button>
+                        </div>
+                    </div>    
+                </form>
+            </div>    
+        </nav>
+        <!-- end of navbar -->
+
+        <!-- contact -->
+        <section class="p-5">
+            <div class="container-fluid">
+                <!-- title -->
+                    <div class="row">
+                        <div class="col text-center mb-3">
+                            <h1 class="text-primary display-2">Vaccine Slots</h1>
+                        </div>
+                    </div>
+                <!-- end of title -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 col-sm-10">
+                        <div class="text-center text-secondary">
+                            <h2>Check your nearest vaccination center and slots availability</h2>
+                            <p>Stay Connected</p>
+                        </div>    
+                        <form class="text-muted" id="main-form">
+                            <div class="form-group text-center">
+                                <button class="btn btn-outline-primary" id="search-by-pin" type="submit">Search by Pin</button>
+                                <button class="btn btn-outline-primary" id="search-by-district" type="submit">Search by District</button>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="pin" placeholder="Enter Your Pin..." data-toggle="tooltip" data-placement="left" title="Enter your pin">
+                            </div>
+                            <button class="btn btn-outline-primary btn-block" type="submit">Submit</button>
+                            <div class="form-group text-center m-5">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-primary btn-default dropdown-toggle px-5" data-toggle="dropdown">States<span class="px-2 caret"></span></button>
+                                    <ul class="dropdown-menu text-center" role="menu">
+                                        <li><a class="dropdown-item" href="#">Jharkhand</a></li>
+                                        <li><a class="dropdown-item" href="#">Bihar</a></li>
+                                        <li><a class="dropdown-item" href="#">Tamilnadu</a></li>
+                                        <li><a class="dropdown-item" href="#">Odisha</a></li>
+                                        <li><a class="dropdown-item" href="#">Maharastra</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-primary btn-default dropdown-toggle px-5" data-toggle="dropdown">District<span class="px-2 caret"></span></button>
+                                    <ul class="dropdown-menu text-center" role="menu">
+                                        <li><a class="dropdown-item" href="#">East Singhbhum</a></li>
+                                        <li><a class="dropdown-item" href="#">West Singhbhum</a></li>
+                                        <li><a class="dropdown-item" href="#">Seraikela-kharsawan</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-primary btn-block" type="submit">Submit</button>
+                        </form>                      
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- end of contact -->
+
+    <!-- footer -->
+        <footer class="bg-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1 class="text-capitalize text-white font-weight-light p-3">Co-win Vaccination Project</h1>
+                        <div class="py-2">
+                            <a href="#"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
+                            <a href="#"><i class="fab fa-instagram fa-2x text-primary mx-3"></i></a>
+                            <a href="#"><i class="fab fa-youtube fa-2x text-danger mx-3"></i></a>
+                        </div>
+                        <p class="text-light py-4 m-0">&copy;Copyright, 2021 - MADE IN INDIA</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- end of footer -->
+
+    <!-- Page JavaScript -->
+        <script src="index.js"></script>
+    <!-- End of Page JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
